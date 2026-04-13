@@ -1,0 +1,25 @@
+# Secrets
+.env
+*.key
+secrets.json
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Build and Cache
+dist/
+build/
+__pycache__/
+node_modules/
+*.spec
+
+# Zip files
+*.zip
+*.tar.gz
+Docling_App_Release.zip
+
+# IDEs
+.vscode/
+.idea/
