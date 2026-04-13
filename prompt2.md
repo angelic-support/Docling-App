@@ -5,7 +5,7 @@
 We are preparing to push the **Docling App** project to a new GitHub repository, followed by uploading the latest release zip file via GitHub Releases. Before any code is committed or pushed, the repository must be rigorously audited to ensure **no sensitive information, massive binaries, or personal data** is accidentally uploaded.
 
 ### Workspace Reference
-- **Project root:** `c:\Users\Angeluser\Downloads\Docling App`
+- **Project root:** `[Project Root Directory]`
 
 ---
 
@@ -27,7 +27,7 @@ Do **not** run `git push` or publish anything to GitHub until all steps below ar
 1. Search the plain-text files (like `.py`, `.ps1`, `.bat`, `.md`, `json`) for potential hardcoded secrets:
    - API Keys (OpenAI, HuggingFace, Gemini, etc.)
    - Passwords or credentials
-   - Personal file paths containing specific usernames (e.g., `C:\Users\Angeluser\...`) hardcoded in the scripts.
+   - Personal file paths containing specific usernames (e.g., `[User Home]\...`) hardcoded in the scripts.
 2. If any are found, **stop immediately** and provide the user with commands or code blocks to remove/parameterize them using environment variables.
 
 ### Step 3: Git Status Audit
