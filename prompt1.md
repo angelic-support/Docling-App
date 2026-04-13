@@ -9,9 +9,9 @@ directory.
 
 ### Workspace
 
-- **Project root:** `c:\Users\Angeluser\Downloads\Docling App`
-- **Portable app folder:** `c:\Users\Angeluser\Downloads\Docling App\dist\Docling_App_Portable`
-- **Target zip output:** `c:\Users\Angeluser\Downloads\Docling App\Docling_App_Release.zip`
+- **Project root:** `[Project Root Directory]`
+- **Portable app folder:** `[Project Root Directory]\dist\Docling_App_Portable`
+- **Target zip output:** `[Project Root Directory]\Docling_App_Release.zip`
 
 ### What has already been done
 
@@ -49,7 +49,7 @@ The full `dist\Docling_App_Portable` folder is **~1.6 GB uncompressed**.
 
 2. **Run the compression command** from the project root:
    ```powershell
-   cd "c:\Users\Angeluser\Downloads\Docling App"
+   cd "[Project Root Directory]"
    tar.exe -a -c -f Docling_App_Release.zip -C dist Docling_App_Portable
    ```
    - `-a` = auto-detect format from extension (uses zip since `.zip`)
