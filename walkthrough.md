@@ -19,7 +19,7 @@ A fully self-contained Windows zip archive that:
 
 | File | Size | Location |
 |---|---|---|
-| `Docling_App_Release.zip` | ~631 MB | `c:\Users\Angeluser\Downloads\Docling App\` |
+| `Docling_App_Release.zip` | ~631 MB | `[Project Root Directory]\` |
 
 ---
 
@@ -61,7 +61,7 @@ set TRANSFORMERS_OFFLINE=1
 ### Step 4 — Compression
 The portable folder was zipped using Windows native `tar.exe` (bsdtar 3.8.4):
 ```powershell
-cd "c:\Users\Angeluser\Downloads\Docling App"
+cd "[Project Root Directory]"
 tar.exe -a -c -f Docling_App_Release.zip -C dist Docling_App_Portable
 ```
 
@@ -84,7 +84,7 @@ tar.exe -a -c -f Docling_App_Release.zip -C dist Docling_App_Portable
 
 ### Rebuild the portable environment from scratch:
 ```powershell
-cd "c:\Users\Angeluser\Downloads\Docling App"
+cd "[Project Root Directory]"
 .\build_portable_app.ps1
 ```
 
